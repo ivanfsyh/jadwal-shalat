@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/al-quran.png" type="image/x-icon" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- fontawesome -->
+    <!-- <link rel="stylesheet" href="vendor/fontawesome-6.4.0/css/all.min.css" /> -->
+</head>
+
+<body>
+    <!-- nav -->
+    <div class="md:flex">
+        <nav class="fixed bottom-0 md:inset-x-0 md:top-0 md:left-0 flex w-full flex-wrap items-center border-solid border-t-2 border-gray-300 bg-slate-100 md:border-t-0 md:border-e-2 md:sticky md:w-20 md:h-screen">
+            <ul class="flex w-full items-center justify-center md:flex-col">
+                <li class="m-auto w-28 p-2 rounded text-center text-teal-600 hover:text-teal-800 md:w-auto md:py-10">
+                    <a href="../index.html" class="text-2xl">
+                        <i class="fa-solid fa-house"></i>
+                        <p class="text-center hidden text-base md:block">Home</p>
+                    </a>
+                </li>
+                <li class="m-auto w-28 p-2 rounded text-center text-teal-600 hover:text-teal-800 md:w-auto md:py-10">
+                    <a href="jadwal_shalat.html" class="text-2xl">
+                        <i class="fa-solid fa-mosque"></i>
+                        <p class="text-center hidden text-base md:block">Jadwal Shalat</p>
+                    </a>
+                </li>
+                <li class="m-auto w-28 p-2 rounded text-center text-teal-600 hover:text-teal-800 md:w-auto md:py-10">
+                    <a href="" class="text-2xl">
+                        <i class="fa-solid fa-book-quran"></i>
+                        <p class="text-center hidden text-base md:block">Quran</p>
+                    </a>
+                </li>
+                <li class="m-auto w-28 p-2 rounded text-center text-teal-600 hover:text-teal-800 md:w-auto md:py-10">
+                    <a href="" class="text-2xl">
+                        <i class="fa-solid fa-moon"></i>
+                        <p class="text-center hidden text-base md:block">Dark</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="p-4 w-full flex-row justify-center">
+            <div class="mx-auto text-center">
+                <h1 class="text-4xl" id="kota"></h1>
+                <p class="mt-2 text-lg" id="provinsi"></p>
+            </div>
+            <div class="flex flex-col mx-auto">
+                <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                    <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+                        <div class="overflow-hidden">
+                            <table class="min-w-full border text-center text-sm">
+                                <thead class="border-b font-medium">
+                                    <tr>
+                                        <th scope="col" class="border-r px-6 py-4">Tanggal</th>
+                                        <th scope="col" class="border-r px-6 py-4">Imsak</th>
+                                        <th scope="col" class="border-r px-6 py-4">Subuh</th>
+                                        <th scope="col" class="border-r px-6 py-4">Terbit</th>
+                                        <th scope="col" class="border-r px-6 py-4">Dhuha</th>
+                                        <th scope="col" class="border-r px-6 py-4">Dzuhur</th>
+                                        <th scope="col" class="border-r px-6 py-4">Ashar</th>
+                                        <th scope="col" class="border-r px-6 py-4">Maghrib</th>
+                                        <th scope="col" class="border-r px-6 py-4">Isya</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="row">
+                                    <!-- <tr class="border-b">
+                                        <td class="whitespace-nowrap border-r px-6 py-4 font-medium">1</td>
+                                        <td class="whitespace-nowrap border-r px-6 py-4">Mark</td>
+                                        <td class="whitespace-nowrap border-r px-6 py-4">Otto</td>
+                                        <td class="whitespace-nowrap border-r px-6 py-4">Otto</td>
+                                        <td class="whitespace-nowrap border-r px-6 py-4">Otto</td>
+                                        <td class="whitespace-nowrap border-r px-6 py-4">Otto</td>
+                                        <td class="whitespace-nowrap border-r px-6 py-4">Otto</td>
+                                        <td class="whitespace-nowrap border-r px-6 py-4">Otto</td>
+                                        <td class="whitespace-nowrap border-r px-6 py-4">Otto</td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- img quran by: https://www.pngwing.com/ -->
+    <!-- fontawesome -->
+    <script src="vendor/fontawesome-6.4.0/js/all.min.js"></script>
+
+    <!-- My script -->
+    <script src="js/jadwal_shalat.js"></script>
+</body>
+
+</html>

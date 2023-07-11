@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="public/img/al-quran.png" type="image/x-icon" />
+    <title>Document</title>
+    <link rel="stylesheet" href="public/css/style.css" />
+    <!-- fontawesome -->
+    <!-- <link rel="stylesheet" href="public/vendor/fontawesome-6.4.0/css/all.min.css" /> -->
+</head>
+
+<body>
+    <!-- nav -->
+    <div class="bg-gray-200 md:flex">
+        <nav class="fixed bottom-0 md:inset-x-0 md:top-0 md:left-0 flex w-full flex-wrap items-center border-solid border-t-2 border-gray-300 bg-slate-100 md:border-t-0 md:border-e-2 md:sticky md:w-20 md:h-screen">
+            <ul class="flex w-full items-center justify-center md:flex-col">
+                <li class="m-auto w-28 p-2 rounded text-center text-teal-600 hover:text-teal-800 md:w-auto md:py-10">
+                    <a href="index.html" class="text-2xl">
+                        <i class="fa-solid fa-house"></i>
+                        <p class="text-center hidden text-base md:block">Home</p>
+                    </a>
+                </li>
+                <li class="m-auto w-28 p-2 rounded text-center text-teal-600 hover:text-teal-800 md:w-auto md:py-10">
+                    <a href="public/cari_kota.html" class="text-2xl">
+                        <i class="fa-solid fa-mosque"></i>
+                        <p class="text-center hidden text-base md:block">Jadwal Shalat</p>
+                    </a>
+                </li>
+                <li class="m-auto w-28 p-2 rounded text-center text-teal-600 hover:text-teal-800 md:w-auto md:py-10">
+                    <a href="" class="text-2xl">
+                        <i class="fa-solid fa-book-quran"></i>
+                        <p class="text-center hidden text-base md:block">Quran</p>
+                    </a>
+                </li>
+                <li class="m-auto w-28 p-2 rounded text-center text-teal-600 hover:text-teal-800 md:w-auto md:py-10">
+                    <a href="" class="text-2xl">
+                        <i class="fa-solid fa-moon"></i>
+                        <p class="text-center hidden text-base md:block">Dark</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="flex w-full justify-center">
+            <div class="flex min-h-screen flex-col items-center justify-center px-6 text-center">
+                <div class="flex flex-col items-center justify-center">
+                    <img alt="Al-Quran" width="200" height="200" src="public/img/al-quran.png" />
+                    <div class="mt-3 flex flex-col items-center justify-center text-center">
+                        <!-- <h1 class="text-2xl">Selamat Pagi</h1> -->
+                        <p class="mb-1 mt-2 text-lg font-medium md:text-xl">
+                            "Maka jangan sekali-kali membiarkan kehidupan dunia ini memperdayakan kamu"
+                            <br />(Q.S Fatir: 5)
+                        </p>
+                        <div class="flex space-x-1">
+                            <p class="text-xl font-bold" id="date"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- img quran by: https://www.pngwing.com/ -->
+    <!-- fontawesome -->
+    <script src="public/vendor/fontawesome-6.4.0/js/all.min.js"></script>
+
+    <!-- My script -->
+    <script src="public/js/script.js"></script>
+</body>
+
+</html>
