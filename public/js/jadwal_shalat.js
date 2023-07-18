@@ -38,9 +38,9 @@ function cariKota() {
 
         for (var i = 0; i < data.data.length; i++) {
             lokasi +=
-                "<div class='m-4'> <a href='jadwal_shalat.html?kota=" +
+                "<div class='mt-4 md:me-3 p-5 border-2 border-teal-500 text-center font-bold hover:bg-teal-600 hover:text-slate-100'> <a href='jadwal_shalat.html?kota=" +
                 data.data[i].id +
-                "'  class='w-52 p-5 m-auto border-2 border-teal-500 text-center font-bold  hover:bg-teal-600 hover:text-slate-100'> " +
+                "'> " +
                 data.data[i].lokasi +
                 '</a></div>';
         }
