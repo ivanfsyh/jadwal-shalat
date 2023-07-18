@@ -66,7 +66,7 @@ function getURLParameter(sParam) {
 
 function loadData() {
     var idKota = getURLParameter('kota');
-    var bulan = new Date().getMonth();
+    var bulan = new Date().getMonth() + 1;
     var tahun = new Date().getFullYear();
     var xhr = new XMLHttpRequest();
     var url =
