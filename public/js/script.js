@@ -1,3 +1,5 @@
+// const { doc } = require('prettier');
+
 function showTime() {
     var a_p = '';
     var today = new Date();
@@ -28,7 +30,6 @@ function checkTime(i) {
     }
     return i;
 }
-setInterval(showTime, 500);
 
 function date() {
     var months = [
@@ -56,3 +57,34 @@ function date() {
 
     return thisDay + ', ' + day + ' ' + months[month] + ' ' + year;
 }
+
+function toggleDarkMode() {
+    const btn = document.querySelector('#toggle-dark');
+    const html = document.querySelector('html');
+    const light = document.querySelector('#toggle-light');
+    const dark = document.querySelector('#toggle-dark');
+
+    btn.addEventListener('click', function() {
+        html.classList.add('dark');
+        light.classList.remove('hidden');
+        dark.classList.add('hidden');
+    });
+}
+
+function toggleLightMode() {
+    const btn = document.querySelector('#toggle-light');
+    const html = document.querySelector('html');
+    const light = document.querySelector('#toggle-light');
+    const dark = document.querySelector('#toggle-dark');
+
+    btn.addEventListener('click', function() {
+        html.classList.remove('dark');
+        light.classList.add('hidden');
+        dark.classList.remove('hidden');
+    });
+}
+
+setInterval(showTime, 500);
+
+toggleDarkMode();
+toggleLightMode();

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -12,34 +12,34 @@
     <!-- <link rel="stylesheet" href="public/vendor/fontawesome-6.4.0/css/all.min.css" /> -->
 </head>
 
-<body>
+<body class="dark:bg-slate-800 dark:text-slate-300 bg-gray-200">
     <!-- nav -->
-    <div class="bg-gray-200 md:flex">
-        <nav class="fixed bottom-0 md:inset-x-0 md:top-0 md:left-0 flex w-full flex-wrap items-center border-solid border-t-2 border-gray-300 bg-slate-100 md:border-t-0 md:border-e-2 md:sticky md:w-20 md:h-screen">
+    <div class="md:flex">
+        <nav class="fixed bottom-0 md:inset-x-0 md:top-0 md:left-0 flex w-full flex-wrap items-center border-solid border-t-2 border-gray-300 bg-slate-100 md:border-t-0 md:border-e-2 md:sticky md:w-20 md:h-screen dark:bg-slate-900 dark:border-slate-900">
             <ul class="flex w-full items-center justify-center md:flex-col">
-                <li class="m-auto w-28 p-2 rounded text-center text-teal-600 hover:text-teal-800 md:w-auto md:py-10">
+                <li class="m-auto w-28 p-2 rounded text-center text-teal-600 hover:text-teal-800 md:w-auto md:py-10 dark:text-slate-500 dark:hover:text-slate-300">
                     <a href="index.html" class="text-2xl">
                         <i class="fa-solid fa-house"></i>
                         <p class="text-center hidden text-base md:block">Home</p>
                     </a>
                 </li>
-                <li class="m-auto w-28 p-2 rounded text-center text-teal-600 hover:text-teal-800 md:w-auto md:py-10">
+                <li class="m-auto w-28 p-2 rounded text-center text-teal-600 hover:text-teal-800 md:w-auto md:py-10 dark:text-slate-500 dark:hover:text-slate-300">
                     <a href="public/cari_kota.html" class="text-2xl">
                         <i class="fa-solid fa-mosque"></i>
                         <p class="text-center hidden text-base md:block">Jadwal Shalat</p>
                     </a>
                 </li>
-                <li class="m-auto w-28 p-2 rounded text-center text-teal-600 hover:text-teal-800 md:w-auto md:py-10">
-                    <a href="" class="text-2xl">
-                        <i class="fa-solid fa-book-quran"></i>
-                        <p class="text-center hidden text-base md:block">Quran</p>
-                    </a>
+                <li id="toggle-dark" class="m-auto w-28 p-2 rounded text-center text-teal-600 hover:text-teal-800 md:w-auto md:py-10 dark:text-slate-500 dark:hover:text-slate-300">
+                    <button class="text-2xl" id="toggle-dark">
+              <i class="fa-solid fa-moon"></i>
+              <p class="text-center hidden text-base md:block">Dark</p>
+            </button>
                 </li>
-                <li class="m-auto w-28 p-2 rounded text-center text-teal-600 hover:text-teal-800 md:w-auto md:py-10">
-                    <a href="" class="text-2xl">
-                        <i class="fa-solid fa-moon"></i>
-                        <p class="text-center hidden text-base md:block">Dark</p>
-                    </a>
+                <li id="toggle-light" class="hidden m-auto w-28 p-2 rounded text-center text-teal-600 hover:text-teal-800 md:w-auto md:py-10 dark:text-slate-500 dark:hover:text-slate-300" id="dark-light">
+                    <button class="text-2xl">
+              <i class="fa-solid fa-moon"></i>
+              <p class="text-center hidden text-base md:block">Light</p>
+            </button>
                 </li>
             </ul>
         </nav>
